@@ -9,5 +9,3 @@ else
 	echo "Error: Directory '$file_name' does not exist in this path."
 	exit 1
 fi
-
-#cp -r Pictures Pictures_backup.zip
