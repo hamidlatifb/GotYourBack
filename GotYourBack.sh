@@ -1,5 +1,16 @@
 #!/bin/bash
 
+echo
+echo "HALLO! Welcome"
+echo "
+ ██████╗     ██╗   ██╗    ██████╗
+██╔════╝     ╚██╗ ██╔╝    ██╔══██╗
+██║  ███╗     ╚████╔╝     ██████╔╝
+██║   ██║      ╚██╔╝      ██╔══██╗
+╚██████╔╝OT     ██║OUR    ██████╔╝ACK
+ ╚═════╝        ╚═╝       ╚═════╝"
+echo
+echo "This is a simple backup script that will create a compressed backup of your chosen directory."
 read -p "Enter the directory name you want to backup: " file_name
 
 if [ -d "$file_name" ]; then
