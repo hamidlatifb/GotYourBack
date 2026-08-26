@@ -29,7 +29,6 @@ case "$answer" in
     [yY]|[yY][eE][sS])
         read -p "After how many days you want the backup file to be deleted: " delete_time
 	if [[ "$delete_time" =~ ^[0-9]+$ ]]; then
-            # FIX 2: Actually remove backups older than the specified days
             find . -name "${file_name}_backup_*.tar.gz" -type f -mtime +"$delete_time" -exec rm -f {} \;
             echo "Backup created! Older backups matching this name (> $delete_time days old) have been cleaned up."
         else
