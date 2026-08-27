@@ -20,7 +20,7 @@ A simple interactive Bash script that creates a compressed backup of a chosen di
 ## Usage
 
 ```bash
-chmod +x GotYourBakc.sh
+chmod +x GotYourBack.sh
 ./GotYourBack.sh
 ```
 
